@@ -1,0 +1,3174 @@
+<!DOCTYPE html><html lang="fr" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://teamjm.github.io/journeymap-docs/6.0.x/fr/client/waypoints/">
+      
+      
+        <link rel="prev" href="../settings/advanced-rendering/">
+      
+      
+        <link rel="next" href="../waypoint-groups/">
+      
+      
+        
+          <link rel="alternate" href="../../../client/waypoints/" hreflang="en">
+        
+          <link rel="alternate" href="./" hreflang="fr">
+        
+          <link rel="alternate" href="../../../es/client/waypoints/" hreflang="es">
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Points de Repère - JourneyMap Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#points-de-cheminement" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden="">
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+  You're not viewing the latest version.
+  <a href="../../../.."> 
+    <strong>Click here to go to latest.</strong>
+  </a>
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href="../../" title="JourneyMap Documentation" class="md-header__button md-logo" aria-label="JourneyMap Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            JourneyMap Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Points de Repère
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo" aria-label="Switch to system preference" type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Sélectionner la langue">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"></path></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../../client/waypoints/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="fr" class="md-select__link">
+              Français
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../es/client/waypoints/" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/TeamJM/journeymap-docs" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    TeamJM/journeymap-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../" title="JourneyMap Documentation" class="md-nav__button md-logo" aria-label="JourneyMap Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    JourneyMap Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/TeamJM/journeymap-docs" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    TeamJM/journeymap-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix="">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Acceuil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2">
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    À propos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    À propos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/credits/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Crédits
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/licensing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Licence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Support
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/mappy2-terms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mappy2 Terms
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/mappy2-privacy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mappy2 Privacy Policy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked="">
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Docs Client
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Docs Client
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basic-usage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Utilisation de Base
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../full-screen-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Carte en Plein Écran
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4">
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paramètres
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Paramètres
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vue d'Ensemble
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings/grid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Grille
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings/minimap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Minicarte
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings/minimap-position/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Position de la Minicarte
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings/full-screen-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Carte en Plein Écran
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings/webmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Webmap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings/waypoint/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Point de Repère
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings/waypoint-beacon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Balises de Point de Repère
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings/cartography/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cartographie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings/filters/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Filtres
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings/advanced/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Options Avancées
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings/advanced-rendering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rendu de Carte Avancé
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Points de Repère
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Points de Repère
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#creation-de-points-de-cheminement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Création de points de cheminement
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#le-gestionnaire-de-points-de-cheminement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Le gestionnaire de points de cheminement
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Le gestionnaire de points de cheminement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#manager-buttons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Manager buttons
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actions-par-waypoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actions par waypoint
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selection-de-plusieurs-waypoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sélection de plusieurs waypoints
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lediteur-de-waypoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        L'éditeur de waypoints
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="L'éditeur de waypoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#options-de-lediteur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Options de l'éditeur
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-fenetre-contextuelle-parametres-du-point-de-cheminement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La fenêtre contextuelle Paramètres du point de cheminement
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#groupes-de-points-de-cheminement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Groupes de points de cheminement
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#icones-de-points-de-cheminement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Icônes de points de cheminement
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#waypoints-geres-par-le-serveur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Waypoints gérés par le serveur
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teleportation-vers-des-waypoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Téléportation vers des waypoints
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partage-de-points-de-cheminement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partage de points de cheminement
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Partage de points de cheminement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#location-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Location Format
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commandes-de-points-de-cheminement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Commandes de points de cheminement
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sauvegardes-et-importation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sauvegardes et importation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sauvegardes et importation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#importation-depuis-la-mini-carte-de-xaero" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Importation depuis la mini-carte de Xaero
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#afficher-sur-la-barre-de-localisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Afficher sur la barre de localisation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parametres" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paramètres
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../waypoint-groups/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Groupes de Points de Repère
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../color-palette/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Palette de Couleurs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4">
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Docs Serveur
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Docs Serveur
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../server/installing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../server/basic-usage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Utilisation de Base
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3">
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Commandes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Commandes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../server/commands/waypoint_command/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Point de Repère
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4">
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paramètres
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Paramètres
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../server/settings/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vue d'Ensemble
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../server/settings/global-properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Propriétés Globales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../server/settings/default-dimension-properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Propriétés de Dimension par Défaut
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../server/settings/dimension-overworld/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dimension - minecraft:overworld
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../server/settings/dimension-nether/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dimension - minecraft:the_nether
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../server/settings/dimension-end/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dimension - minecraft:the_end
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../server/multiplayer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multijoueur
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6">
+        
+          
+          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Points de Terminaison
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Points de Terminaison
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../server/endpoints/waypoint/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Point de Repère
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5">
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Webmap
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Webmap
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../webmap/installing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../webmap/basic-usage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Utilisation de Base
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../webmap/settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paramètres
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6">
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Outils &amp; Personnalisation
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Outils &amp; Personnalisation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tools/custom-mob-icons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Icônes de Mobs Personnalisées
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tools/waypoint-icons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Icônes de Points de Repère
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tools/integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intégrez votre mod
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tools/journeymap-tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Outils JourneyMap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tools/multiplayer-server/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cartographier un serveur multijoueur
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tools/topographic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Topographique
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tools/ui-themes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Thèmes UI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7">
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contribuer
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Contribuer
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/translate-mod/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Traduire le mod
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/translate-docs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Traduire les docs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelogs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelogs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#creation-de-points-de-cheminement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Création de points de cheminement
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#le-gestionnaire-de-points-de-cheminement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Le gestionnaire de points de cheminement
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Le gestionnaire de points de cheminement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#manager-buttons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Manager buttons
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actions-par-waypoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actions par waypoint
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selection-de-plusieurs-waypoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sélection de plusieurs waypoints
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lediteur-de-waypoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        L'éditeur de waypoints
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="L'éditeur de waypoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#options-de-lediteur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Options de l'éditeur
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-fenetre-contextuelle-parametres-du-point-de-cheminement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La fenêtre contextuelle Paramètres du point de cheminement
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#groupes-de-points-de-cheminement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Groupes de points de cheminement
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#icones-de-points-de-cheminement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Icônes de points de cheminement
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#waypoints-geres-par-le-serveur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Waypoints gérés par le serveur
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teleportation-vers-des-waypoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Téléportation vers des waypoints
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partage-de-points-de-cheminement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partage de points de cheminement
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Partage de points de cheminement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#location-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Location Format
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commandes-de-points-de-cheminement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Commandes de points de cheminement
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sauvegardes-et-importation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sauvegardes et importation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sauvegardes et importation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#importation-depuis-la-mini-carte-de-xaero" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Importation depuis la mini-carte de Xaero
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#afficher-sur-la-barre-de-localisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Afficher sur la barre de localisation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parametres" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paramètres
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="points-de-cheminement"><strong>Points de cheminement</strong></h1>
+<p>Les waypoints vous permettent de marquer des emplacements spécifiques sur votre carte afin que vous puissiez garder
+suivez-les ou retrouvez votre chemin vers eux plus tard.</p>
+<p>Les waypoints de mort sont créés automatiquement lorsque vous mourez, vous pouvez donc
+revenez récupérer vos objets. Les waypoints de la mort peuvent être désactivés dans le
+<a href="../settings/waypoint/">gestionnaire de paramètres</a> si vous préférez.</p>
+<p>Par défaut, un waypoint est affiché dans le monde sous la forme d'un faisceau de balise coloré,
+avec son nom et son icône affichés lorsque vous regardez vers lui. Ceci et
+de nombreux autres comportements peuvent être modifiés dans le
+<a href="../settings/waypoint/">Paramètres des waypoints</a> et
+<a href="../settings/waypoint-beacon/">Paramètres de la balise de point de cheminement</a>.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/waypoint.png" data-desc-position="bottom"><img alt="Waypoint" class="center" src="../../img/waypoint.png"></a></p>
+<h2 id="creation-de-points-de-cheminement"><strong>Création de points de cheminement</strong></h2>
+<p>Vous pouvez créer un waypoint de l'une des manières suivantes&nbsp;:</p>
+<ul>
+<li>Appuyez sur <span class="keys"><kbd class="key-b">B</kbd></span> dans le jeu pour créer un waypoint où vous vous trouvez.</li>
+<li>Double-cliquez ou appuyez sur <span class="keys"><kbd class="key-b">B</kbd></span> dans la <a href="../full-screen-map/">carte plein écran</a>
+  pour créer un waypoint au niveau du curseur.</li>
+<li>Ouvrez le Waypoint Manager et utilisez le bouton <strong>Nouveau</strong>.</li>
+</ul>
+<p>Chaque méthode ouvre l'<a href="#the-waypoint-editor">Waypoint Editor</a> afin que vous puissiez
+nommez et personnalisez le waypoint avant de l’enregistrer.</p>
+<h2 id="le-gestionnaire-de-points-de-cheminement"><strong>Le gestionnaire de points de cheminement</strong></h2>
+<p>Le Waypoint Manager est un endroit unique pour gérer tous vos waypoints
+et les groupes de points de cheminement. Ouvrez-le de l'une des manières suivantes&nbsp;:</p>
+<ul>
+<li>Appuyez sur <span class="keys"><kbd class="key-n">N</kbd></span> dans le jeu ou sur la carte en plein écran.</li>
+<li>Ouvrez la <a href="../full-screen-map/">carte plein écran</a> et cliquez sur le Waypoint
+  Bouton Gestionnaire.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/waypoint-manager.png" data-desc-position="bottom"><img alt="Waypoint-Manager" class="center" src="../../img/waypoint-manager.png"></a></p>
+<p>Le gestionnaire dispose de deux panneaux&nbsp;: une liste de <a href="#waypoint-groups">groupes</a> sur un
+d’un côté et les waypoints du groupe sélectionné de l’autre. Un champ de recherche
+filtre la liste au fur et à mesure que vous tapez.</p>
+<h3 id="manager-buttons">Manager buttons</h3>
+<table>
+<thead>
+<tr>
+<th>Bouton</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nouveau</td>
+<td>Créez un nouveau waypoint.</td>
+</tr>
+<tr>
+<td>Nouveau groupe</td>
+<td>Créez un nouveau groupe de waypoints.</td>
+</tr>
+<tr>
+<td>Options</td>
+<td>Ouvrez le <a href="../settings/overview/">gestionnaire de paramètres</a>.</td>
+</tr>
+<tr>
+<td>Dimensions</td>
+<td>Filtrez les waypoints affichés par dimension.</td>
+</tr>
+<tr>
+<td>Importer externe</td>
+<td>Importez des waypoints à partir de la mini-carte de Xaero. <strong>Apparaît uniquement lorsque les waypoints de Xaero sont détectés</strong> pour votre monde actuel - voir <a href="#importing-from-xaeros-minimap">Importation depuis la Minimap</a> de Xaero.</td>
+</tr>
+<tr>
+<td>Exporter</td>
+<td>Exportez vos waypoints dans un fichier (vous choisissez le format).</td>
+</tr>
+<tr>
+<td>En attente</td>
+<td>Passez en revue les waypoints que d’autres joueurs ont partagés avec vous.</td>
+</tr>
+<tr>
+<td>Fermer</td>
+<td>Fermez le gestionnaire de points de cheminement.</td>
+</tr>
+</tbody>
+</table>
+<p>Pour importer ou restaurer les propres fichiers de waypoints de JourneyMap (un fichier
+<code>.dat</code>, ou une sauvegarde), voir <a href="#backups-and-importing">Sauvegardes et importation</a>
+ci-dessous - qui est distinct du bouton Importer externe.</p>
+<h3 id="actions-par-waypoint">Actions par waypoint</h3>
+<p>Chaque waypoint de la liste comporte ces actions&nbsp;:</p>
+<ul>
+<li><strong>Téléportation</strong> - si le serveur l'autorise, téléportez-vous directement au waypoint.</li>
+<li><strong>Rechercher</strong> - localisez le waypoint sur la <a href="../full-screen-map/">carte plein écran</a>.</li>
+<li><strong>On/Off</strong> - bascule la visibilité du waypoint.</li>
+<li><strong>Modifier</strong> - ouvrez l'<a href="#the-waypoint-editor">Waypoint Editor</a>.</li>
+<li><strong>Supprimer</strong> - supprime le waypoint.</li>
+<li><strong>Chat</strong> - partagez le waypoint (voir <a href="#sharing-waypoints">Partage des waypoints</a>).</li>
+</ul>
+<h3 id="selection-de-plusieurs-waypoints">Sélection de plusieurs waypoints</h3>
+<p>Utilisez <strong>Sélectionner tout</strong> ou sélectionnez des waypoints individuels pour agir sur plusieurs à la fois.
+une fois. Avec une sélection active, vous pouvez <strong>Basculer la sélection</strong>,
+<strong>Partager la sélection</strong> ou <strong>Supprimer la sélection</strong>.</p>
+<h2 id="lediteur-de-waypoints"><strong>L'éditeur de waypoints</strong></h2>
+<p>L'éditeur de waypoints s'ouvre chaque fois que vous créez ou modifiez un waypoint.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/waypoint-edit.png" data-desc-position="bottom"><img alt="Waypoint-Edit" class="center" src="../../img/waypoint-edit.png"></a></p>
+<p>L'éditeur fournit ces champs&nbsp;:</p>
+<ul>
+<li><strong>Nom</strong> - le nom d'affichage du waypoint.</li>
+<li><strong>Emplacement</strong> - les coordonnées X, Y et Z. Vous pouvez basculer entre
+  des champs X / Y / Z séparés et un seul champ <code>X, Y, Z</code> combiné en utilisant
+  l’option Disposition des coordonnées (voir ci-dessous). Une case à cocher <strong>Sync</strong> à côté de
+  le champ Y, lorsqu'il est activé, remplit la valeur Y de la surface mise en cache
+  hauteur pour ce X/Z (si ce morceau a été cartographié), donc le waypoint
+  se trouve à la surface.</li>
+<li><strong>Dimensions</strong> - active les dimensions dans lesquelles le waypoint est affiché.</li>
+<li><strong>Groupe</strong> - le <a href="#waypoint-groups">groupe</a> auquel appartient ce waypoint.
+  Vous pouvez également créer un nouveau groupe à partir d'ici.</li>
+<li><strong>Activer</strong> - si le waypoint est activé et visible.</li>
+<li><strong>Couleur</strong> - la couleur du waypoint. Cliquez sur la roue chromatique pour choisir un
+  couleur, ou utilisez <strong>Randomize</strong> pour une nouvelle couleur aléatoire. Ceci définit le
+  couleurs d'icône, de balise et d'étiquette ensemble&nbsp;; pour les définir séparément, utilisez
+  la fenêtre contextuelle Paramètres.</li>
+<li><strong>Icône</strong> - cliquez sur le bouton icône pour choisir l'icône du waypoint. Voir
+  <a href="#waypoint-icons">Icônes de points de cheminement</a>.</li>
+<li><strong>Paramètres</strong> - ouvre le
+  <a href="#the-waypoint-settings-popup">popup Paramètres de waypoint</a>, où vous pouvez
+  définissez les couleurs des icônes, des balises et des étiquettes individuellement et choisissez où
+  le waypoint est affiché.</li>
+<li><strong>Description</strong> - ouvre une fenêtre contextuelle pour une description en texte libre plus longue.</li>
+</ul>
+<p>Buttons:</p>
+<ul>
+<li><strong>Réinitialiser</strong> - annulez vos modifications non enregistrées sur ce waypoint.</li>
+<li><strong>Enregistrer</strong> - enregistrez vos modifications.</li>
+<li><strong>Fermer</strong> - ferme l'éditeur sans enregistrer.</li>
+</ul>
+<h3 id="options-de-lediteur">Options de l'éditeur</h3>
+<p>Le bouton <strong>Options de l'éditeur de waypoint</strong> configure l'éditeur lui-même
+plutôt qu'un seul waypoint. Il comprend la <strong>Mise en page des coordonnées</strong>
+option, qui bascule entre des champs de saisie X / Y / Z séparés et un
+champ <code>X, Y, Z</code> combiné unique.</p>
+<h3 id="la-fenetre-contextuelle-parametres-du-point-de-cheminement">La fenêtre contextuelle Paramètres du point de cheminement</h3>
+<p>Le bouton <strong>Paramètres</strong> dans l'éditeur ouvre la fenêtre contextuelle Paramètres du point de cheminement,
+qui contrôle les couleurs du waypoint et l'endroit où il est affiché.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/client/waypoint-settings.png" data-desc-position="bottom"><img alt="Paramètres de waypoint" class="center" src="../../img/client/waypoint-settings.png"></a></p>
+<p><strong>Couleurs.</strong> La fenêtre contextuelle a une table de couleurs à quatre lignes - <strong>Icône</strong>,
+<strong>Couleur de l'icône</strong>, <strong>Beacon</strong> et <strong>Étiquette</strong>&nbsp;:</p>
+<ul>
+<li>La ligne <strong>Icône</strong> comporte un bouton icône permettant de choisir le
+  <a href="#waypoint-icons">icon</a>, avec un sélecteur de couleurs.</li>
+<li>Les lignes <strong>Icon Color</strong>, <strong>Beacon</strong> et <strong>Label</strong> ont chacune une couleur.
+  sélecteur pour cet élément.</li>
+<li>Les couleurs de l'icône, de la balise et de l'étiquette suivent la couleur de l'icône jusqu'à ce que
+  vous les définissez individuellement, donc par défaut ils correspondent.</li>
+<li>Le bouton <strong>Effacer</strong> de chaque ligne supprime cette couleur, dessinant l'élément
+  sans teinte.</li>
+<li><strong>Réinitialiser les couleurs</strong> renvoie toutes les lignes à la couleur de l'icône.</li>
+</ul>
+<p><strong>Visibilité.</strong> Une colonne de cases à cocher contrôle l'emplacement du waypoint.
+montré:</p>
+<table>
+<thead>
+<tr>
+<th>Basculer</th>
+<th>Effet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Afficher sur la carte</td>
+<td>Affichez le waypoint sur la mini-carte et la carte en plein écran.</td>
+</tr>
+<tr>
+<td>Afficher dans le monde</td>
+<td>Afficher le waypoint dans le monde.</td>
+</tr>
+<tr>
+<td>Afficher l'étiquette</td>
+<td>Afficher l'étiquette du nom du waypoint.</td>
+</tr>
+<tr>
+<td>Afficher la balise</td>
+<td>Montrez le faisceau de balise dans le monde.</td>
+</tr>
+<tr>
+<td>Afficher l'icône</td>
+<td>Afficher l'icône du waypoint.</td>
+</tr>
+<tr>
+<td>Afficher l'écart</td>
+<td>Afficher l’affichage de l’écart à côté de l’étiquette.</td>
+</tr>
+<tr>
+<td>Afficher sur la barre de localisation</td>
+<td>Affichez le waypoint sur la barre de localisation vanille.</td>
+</tr>
+</tbody>
+</table>
+<p>La bascule <strong>Afficher sur la barre de localisation</strong> n'est présente dans JourneyMap que pour
+Minecraft 26.1 et versions ultérieures (voir <a href="#show-on-locator-bar">Afficher sur la barre de localisation</a>).</p>
+<h2 id="groupes-de-points-de-cheminement"><strong>Groupes de points de cheminement</strong></h2>
+<p>Les groupes de waypoints vous permettent d'organiser les waypoints en ensembles nommés - par exemple
+<code>Bases</code>, <code>Mining</code> ou <code>Villages</code>. Un groupe peut être activé ou désactivé selon
+un tout, doté de sa propre icône et marqué comme groupe par défaut pour les nouveaux
+points de cheminement.</p>
+<p>JourneyMap possède plusieurs groupes intégrés&nbsp;: <code>Default</code> (où les nouveaux waypoints
+allez sauf si vous en décidez autrement), <code>Death</code> (points de cheminement de la mort) et <code>Temp</code>
+(waypoints temporaires). La vue <code>All</code> affiche chaque waypoint, quel que soit le
+groupe.</p>
+<div class="admonition remarque">
+<p class="admonition-title">Plus de détails</p>
+<p>Les groupes constituent une fonctionnalité importante avec leur propre écran de gestion. Plein
+la couverture se trouve sur la page <a href="../waypoint-groups/">Waypoint Groups</a>».</p>
+</div>
+<h2 id="icones-de-points-de-cheminement"><strong>Icônes de points de cheminement</strong></h2>
+<p>Cliquez sur le bouton icône dans l'éditeur de waypoints (ou sur la rangée d'icônes de l'éditeur de waypoints).
+<a href="#the-waypoint-settings-popup">Paramètres popup</a>) pour ouvrir le sélecteur d'icônes.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/client/waypoint-icon-picker.png" data-desc-position="bottom"><img alt="Waypoint-Icon-Picker" class="center" src="../../img/client/waypoint-icon-picker.png"></a></p>
+<p>Le sélecteur regroupe les icônes en onglets&nbsp;:</p>
+<ul>
+<li><strong>Tous</strong> - toutes les icônes disponibles.</li>
+<li><strong>JourneyMap</strong> - les icônes JourneyMap intégrées.</li>
+<li><strong>Minecraft</strong> - textures d'objets Minecraft vanille.</li>
+<li><strong>Map Deco</strong> - icônes de marqueurs de carte vanille.</li>
+<li>Un onglet pour chaque jeu d'icônes nommé fourni par un pack de ressources.</li>
+</ul>
+<p>Le sélecteur dispose également d'un sélecteur de couleurs, vous pouvez donc définir la couleur de l'icône tout en
+en le choisissant, et un bouton <strong>Effacer</strong> pour supprimer la couleur.</p>
+<p>Vous pouvez ajouter vos propres icônes de waypoint et vos propres jeux d'icônes nommés, avec un
+pack de ressources. Voir
+<a href="../../tools/waypoint-icons/">Icônes de points de cheminement (packs de ressources)</a>.</p>
+<h2 id="waypoints-geres-par-le-serveur"><strong>Waypoints gérés par le serveur</strong></h2>
+<p>Lorsque vous jouez sur un serveur qui exécute JourneyMap, le serveur peut gérer
+waypoints lui-même. Dans ce cas, les waypoints ont une <strong>portée</strong>&nbsp;:</p>
+<ul>
+<li><strong>Personnel</strong> - vos propres waypoints, visibles uniquement par vous.</li>
+<li><strong>Global</strong> - waypoints gérés par le serveur et partagés avec les joueurs,
+  configuré par les administrateurs du serveur.</li>
+</ul>
+<p>Le Waypoint Manager affiche un sélecteur de portée lorsqu'il est géré par le serveur
+des waypoints sont disponibles. Voir
+<a href="../../server/multiplayer/">Paramètres du serveur multijoueur</a> pour le
+options côté serveur.</p>
+<h2 id="teleportation-vers-des-waypoints"><strong>Téléportation vers des waypoints</strong></h2>
+<p>Si le serveur le permet, l'action <strong>Téléporter</strong> dans le Waypoint Manager
+vous amène directement à un waypoint. La téléportation est contrôlée par
+dimension par les administrateurs du serveur, il peut donc être disponible dans certaines dimensions
+et pas les autres. En mode solo, il est toujours disponible.</p>
+<p>La commande de téléportation utilisée par JourneyMap peut être personnalisée, et il existe un
+option pour supprimer les décimales des coordonnées qu’il envoie. Voir le
+<a href="../settings/waypoint/">Paramètres des points de cheminement</a>.</p>
+<h2 id="partage-de-points-de-cheminement"><strong>Partage de points de cheminement</strong></h2>
+<p>Vous pouvez partager un waypoint ou un emplacement avec d'autres joueurs. Les joueurs qui le font
+JourneyMap ne voit toujours pas l'emplacement dans le chat dans un format lisible.</p>
+<p>Il existe trois façons de partager&nbsp;:</p>
+<ol>
+<li>Dans le Waypoint Manager, utilisez le bouton <strong>Chat</strong> à côté d'un waypoint.
+   (ou <strong>Partager la sélection</strong> pour plusieurs). L'emplacement est placé dans le
+   entrée de chat pour vous - ajoutez un message si vous le souhaitez, puis appuyez sur Entrée.</li>
+<li>Dans la saisie du chat, tapez <code>/jm ~</code> et appuyez sur Entrée. Il est remplacé par
+   votre emplacement actuel.</li>
+<li>Saisissez manuellement un emplacement dans le chat entre crochets (voir
+   <a href="#location-format">Format d'emplacement</a> ci-dessous).</li>
+</ol>
+<p>Lorsqu'un emplacement correctement formaté apparaît dans le chat, <strong>cliquez</strong> dessus pour
+créez un waypoint, ou <strong>contrôlez-cliquez</strong> dessus pour afficher l'emplacement sur le
+carte en plein écran.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/waypoint-chat.png" data-desc-position="bottom"><img alt="Waypoint-Chat" class="center" src="../../img/waypoint-chat.png"></a></p>
+<p>Les waypoints partagés directement avec vous arrivent en tant que waypoints <strong>En attente</strong>. Ouvert
+le bouton <strong>En attente</strong> dans le Waypoint Manager pour <strong>Accepter</strong> ou
+<strong>Refusez</strong> chacun.</p>
+<h3 id="location-format">Location Format</h3>
+<p>Un emplacement doit avoir au moins les coordonnées x et z. L'ordre du
+les valeurs n'ont pas d'importance :</p>
+<ul>
+<li><code>[x:#, z:#]</code></li>
+<li><code>[x:#, y:#, z:#]</code></li>
+<li><code>[x:#, y:#, z:#, dim:#]</code></li>
+<li><code>[x:#, y:#, z:#, dim:#, name:text]</code></li>
+<li><code>[name:text, dim:#, x:#, z:#, y:#]</code></li>
+</ul>
+<p>Un emplacement est constitué de deux ou plusieurs paires <code>name:value</code> séparées par des virgules. Le
+les valeurs prises en charge sont&nbsp;:</p>
+<ul>
+<li><code>x</code> (integer) <strong>required</strong></li>
+<li><code>y</code> (integer)</li>
+<li><code>z</code> (integer) <strong>required</strong></li>
+<li><code>dim</code> (integer)</li>
+<li><code>name</code> (string, no quotes, no commas)</li>
+</ul>
+<h2 id="commandes-de-points-de-cheminement"><strong>Commandes de points de cheminement</strong></h2>
+<p>Les commandes de discussion de JourneyMap vivent sous le préfixe <code>/jm</code>.</p>
+<p><code>/jm reload</code> recharge les fichiers de waypoints depuis le disque sans redémarrer le
+jeu. Ceci est principalement utile après avoir déposé des fichiers de waypoints dans le
+dossier waypoint pendant que le jeu est en cours d'exécution.</p>
+<p>Lorsque le serveur exécute JourneyMap, les commandes de waypoint côté serveur sont également
+disponible sous <code>/jm waypoint</code> (ou <code>/jm wp</code>). Voir le
+<a href="../../server/commands/waypoint_command/">page </a> de commande de point de cheminement du serveur.</p>
+<h2 id="sauvegardes-et-importation"><strong>Sauvegardes et importation</strong></h2>
+<p>JourneyMap protège vos données de waypoint de plusieurs manières&nbsp;:</p>
+<ul>
+<li><strong>Sauvegardes continues</strong> - JourneyMap conserve des sauvegardes récentes de votre waypoint
+  données et charge automatiquement la bonne sauvegarde la plus récente si le principal
+  le fichier s'avère endommagé.</li>
+<li><strong>Importer/Exporter</strong> - utilisez les boutons Importer et Exporter dans le
+  Waypoint Manager pour sauvegarder vos waypoints dans un fichier ou les restaurer.</li>
+<li><strong>Fusion directe</strong> - déposez un fichier de point de cheminement <code>.dat</code> dans le point de cheminement
+  dossier et JourneyMap fusionne ses waypoints dans vos données existantes.
+  Exécutez <code>/jm reload</code> ou reconnectez-vous pour récupérer les fichiers ajoutés pendant la lecture.</li>
+<li><strong>Importer depuis Xaero</strong> - si les waypoints Minimap de Xaero sont détectés pour
+  votre monde actuel, un bouton <strong>Importer externe</strong> apparaît dans le
+  Gestionnaire de points de cheminement. Voir <a href="#importing-from-xaeros-minimap">Importation à partir de Minimap</a> de Xaero.</li>
+</ul>
+<h3 id="importation-depuis-la-mini-carte-de-xaero">Importation depuis la mini-carte de Xaero</h3>
+<p>JourneyMap peut importer des waypoints à partir de <strong>la mini-carte de Xaero</strong>, actuellement la
+seule source externe prise en charge. Le bouton <strong>Importer externe</strong> apparaît dans
+la barre d'outils Waypoint Manager <strong>uniquement lorsque</strong> JourneyMap détecte le Xaero
+des waypoints pour le monde ou le serveur sur lequel vous vous trouvez&nbsp;; s'il n'y en a pas pour le
+monde actuel, le bouton est masqué.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../img/client/waypoint-import.png" data-desc-position="bottom"><img alt="Import-Button" class="center" src="../../../img/client/waypoint-import.png"></a></p>
+<p>En cliquant dessus, vous ouvrez l'écran <strong>Importer des waypoints externes</strong>, où vous pouvez
+examinez les waypoints détectés et importez-les. JourneyMap lit celui de Xaero
+propre dossier de données, correspondant par monde solo, adresse de serveur ou
+Royaume.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../img/client/waypoint-import-external.png" data-desc-position="bottom"><img alt="Importer-Waypoints-Externes" class="center" src="../../../img/client/waypoint-import-external.png"></a></p>
+<p>Ceci est distinct du
+<a href="../settings/overview/#import-export">Outils d'importation/exportation de données</a> et depuis
+la fusion drop-in <code>.dat</code> ci-dessus&nbsp;: celles-ci gèrent les propres fichiers de JourneyMap,
+pendant que ceci lit celui de Xaero.</p>
+<h2 id="afficher-sur-la-barre-de-localisation"><strong>Afficher sur la barre de localisation</strong></h2>
+<div class="admonition informations">
+<p class="admonition-title">26.1 et plus récent</p>
+<p>La barre de localisation est une fonctionnalité de Minecraft 1.21.6+, cette option est donc
+présent uniquement dans JourneyMap pour Minecraft 26.1 et versions ultérieures (le 26.x
+ligne, dont 26.2). Il n'est pas disponible sur la ligne 1.21.1
+(1.21.1 / 1.21.11).</p>
+</div>
+<p>Les waypoints peuvent être affichés sur la barre de localisation de Minecraft. Ceci est contrôlé par
+une option <strong>Afficher sur la barre de localisation</strong>, disponible à la fois globalement et par
+<a href="../waypoint-groups/">groupe</a>. Les waypoints désactivés ne sont pas affichés sur le
+barre de localisation.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/client/locator-bar.png" data-desc-position="bottom"><img alt="Locator-Bar" class="center" src="../../img/client/locator-bar.png"></a></p>
+<h2 id="parametres"><strong>Paramètres</strong></h2>
+<p>Le comportement du waypoint est configuré dans deux catégories de paramètres&nbsp;:</p>
+<ul>
+<li><a href="../settings/waypoint/">Paramètres des waypoints</a> - waypoints de mort, le
+  commande de téléportation, partage et bien plus encore.</li>
+<li><a href="../settings/waypoint-beacon/">Paramètres de la balise de point de cheminement</a> - comment le point de cheminement
+  des balises et des étiquettes sont dessinées dans le monde.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.copy", "search.highlight", "search.suggest"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

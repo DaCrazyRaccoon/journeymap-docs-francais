@@ -1,0 +1,2994 @@
+<!DOCTYPE html><html lang="fr" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://teamjm.github.io/journeymap-docs/6.0.x/fr/changelogs/">
+      
+      
+        <link rel="prev" href="../contributing/translate-docs/">
+      
+      
+      
+        
+          <link rel="alternate" href="../../changelogs/" hreflang="en">
+        
+          <link rel="alternate" href="./" hreflang="fr">
+        
+          <link rel="alternate" href="../../es/changelogs/" hreflang="es">
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Changelogs - JourneyMap Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#changelogs" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden="">
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+  You're not viewing the latest version.
+  <a href="../../.."> 
+    <strong>Click here to go to latest.</strong>
+  </a>
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href="../" title="JourneyMap Documentation" class="md-header__button md-logo" aria-label="JourneyMap Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            JourneyMap Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Changelogs
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo" aria-label="Switch to system preference" type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Sélectionner la langue">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"></path></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../changelogs/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="fr" class="md-select__link">
+              Français
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../es/changelogs/" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/TeamJM/journeymap-docs" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    TeamJM/journeymap-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../" title="JourneyMap Documentation" class="md-nav__button md-logo" aria-label="JourneyMap Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    JourneyMap Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/TeamJM/journeymap-docs" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    TeamJM/journeymap-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix="">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Acceuil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2">
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    À propos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    À propos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/credits/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Crédits
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/licensing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Licence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Support
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/mappy2-terms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mappy2 Terms
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/mappy2-privacy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mappy2 Privacy Policy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3">
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Docs Client
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Docs Client
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../client/installing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../client/basic-usage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Utilisation de Base
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../client/full-screen-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Carte en Plein Écran
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4">
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paramètres
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Paramètres
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../client/settings/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vue d'Ensemble
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../client/settings/grid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Grille
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../client/settings/minimap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Minicarte
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../client/settings/minimap-position/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Position de la Minicarte
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../client/settings/full-screen-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Carte en Plein Écran
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../client/settings/webmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Webmap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../client/settings/waypoint/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Point de Repère
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../client/settings/waypoint-beacon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Balises de Point de Repère
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../client/settings/cartography/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cartographie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../client/settings/filters/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Filtres
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../client/settings/advanced/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Options Avancées
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../client/settings/advanced-rendering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rendu de Carte Avancé
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../client/waypoints/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Points de Repère
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../client/waypoint-groups/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Groupes de Points de Repère
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../client/color-palette/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Palette de Couleurs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4">
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Docs Serveur
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Docs Serveur
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../server/installing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../server/basic-usage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Utilisation de Base
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3">
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Commandes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Commandes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../server/commands/waypoint_command/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Point de Repère
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4">
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paramètres
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Paramètres
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../server/settings/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vue d'Ensemble
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../server/settings/global-properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Propriétés Globales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../server/settings/default-dimension-properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Propriétés de Dimension par Défaut
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../server/settings/dimension-overworld/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dimension - minecraft:overworld
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../server/settings/dimension-nether/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dimension - minecraft:the_nether
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../server/settings/dimension-end/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dimension - minecraft:the_end
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../server/multiplayer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multijoueur
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6">
+        
+          
+          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Points de Terminaison
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Points de Terminaison
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../server/endpoints/waypoint/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Point de Repère
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5">
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Webmap
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Webmap
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../webmap/installing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../webmap/basic-usage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Utilisation de Base
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../webmap/settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paramètres
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6">
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Outils &amp; Personnalisation
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Outils &amp; Personnalisation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools/custom-mob-icons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Icônes de Mobs Personnalisées
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools/waypoint-icons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Icônes de Points de Repère
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools/integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intégrez votre mod
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools/journeymap-tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Outils JourneyMap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools/multiplayer-server/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cartographier un serveur multijoueur
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools/topographic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Topographique
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools/ui-themes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Thèmes UI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7">
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contribuer
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Contribuer
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing/translate-mod/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Traduire le mod
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing/translate-docs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Traduire les docs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelogs
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelogs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#journeymap-600" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JourneyMap 6.0.0
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="JourneyMap 6.0.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updated" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Updated
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#journeymap-600" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JourneyMap 6.0.0
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="JourneyMap 6.0.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updated" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Updated
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="changelogs"><strong>Changelogs</strong></h1>
+<p>Cette page est le journal des modifications consolidé pour JourneyMap 6.0.x. Il fusionne
+entrées des versions 1.21.1, 1.21.11, 26.1 et 26.2.</p>
+<p>Le journal des modifications 5.9.x est conservé sur la branche 5.9.x docs et reste
+accessible via le sélecteur de version en haut à droite.</p>
+<hr>
+<h2 id="journeymap-600"><strong>JourneyMap 6.0.0</strong></h2>
+<h3 id="added">Added</h3>
+<ul>
+<li>Ajouté&nbsp;: option "Map All Layers" dans la boîte de dialogue Auto-Map qui cartographie tous les types de cartes de surface et chaque couche de grottes à la fois (affichée uniquement lorsque la cartographie des grottes est activée)</li>
+<li>Ajouté : Une case à cocher "Sync" à côté du champ Y dans l'éditeur de waypoint</li>
+<li>Ajouté&nbsp;: Possibilité d'ajouter des waypoints temporaires</li>
+<li>Ajouté&nbsp;: option avancée pour désactiver la superposition de numéros sur le commutateur de préréglage de la mini-carte</li>
+<li>Ajouté&nbsp;: Option avancée pour désactiver le rendu de la mini-carte derrière les écrans (1.21.1 uniquement)</li>
+<li>Ajouté&nbsp;: Masquer automatiquement les icônes et curseurs d'angle d'étiquette/icône</li>
+<li>Ajouté&nbsp;: édition des couleurs du biome dans la palette de couleurs et refonte de ces écrans</li>
+<li>Ajouté&nbsp;: shader de filtre de luminosité&nbsp;; Corrigé&nbsp;: filtres de carte non appliqués aux tuiles LOD (1.21.1 uniquement)</li>
+<li>Ajouté&nbsp;: option de shader de filtre de carte de luminosité (26.1 uniquement)</li>
+<li>Ajouté&nbsp;: Option de cartographie&nbsp;: morceau de joueur sur la carte uniquement</li>
+<li>Ajouté&nbsp;: Palette de couleurs au sélecteur de couleurs avec les couleurs des anciennes versions</li>
+<li>Ajouté&nbsp;: option d'éclairage de surface configurable du Nether dans les paramètres de cartographie</li>
+<li>Ajouté&nbsp;: option de disposition des coordonnées et option de boutons pour les waypoints</li>
+<li>Ajouté&nbsp;: le fait de déposer des fichiers .dat dans le dossier des points de cheminement avec les données de point de cheminement appropriées fusionnera les fichiers.</li>
+<li>Ajouté&nbsp;: bouton Groupe pour activer/désactiver le groupe</li>
+<li>Ajouté&nbsp;: Génération d'icônes à partir des modèles AzureLib</li>
+<li>Ajouté&nbsp;: prise en charge des icônes pour les mobs GeckoLib</li>
+<li>Ajouté&nbsp;:&nbsp;option Ignorer les blocs de neige</li>
+<li>Ajouté&nbsp;: bouton Importer/Exporter dans l'écran des options pour sauvegarder ou charger la date sauvegardée</li>
+<li>Ajouté&nbsp;: raccourcis clavier et options pour activer/désactiver les waypoints du monde et de la carte.</li>
+<li>Ajouté&nbsp;: Litière de feuilles sur les plantes (26.1 uniquement)</li>
+<li>Ajouté&nbsp;: Option de carte pour afficher les joueurs hors écran</li>
+<li>Ajouté&nbsp;: Option de mini-carte pour la couche sur laquelle effectuer le rendu, par défaut&nbsp;: Dernier</li>
+<li>Ajouté&nbsp;: Nouvelle option avancée pour désactiver la décoloration de l'icône du joueur</li>
+<li>Ajouté&nbsp;: Nouveau bouton dans le gestionnaire de waypoints pour configurer certaines options de l'éditeur</li>
+<li>Ajouté&nbsp;: Nouvelle icône de point de mort</li>
+<li>Ajouté&nbsp;: Nouvelle option plein écran&nbsp;: interface utilisateur minimale qui masque la plupart des boutons sur la carte plein écran</li>
+<li>Ajouté&nbsp;: Nouvelles icônes de points de cheminement faites à la main et jeux d'icônes de points de cheminement supplémentaires</li>
+<li>Ajouté : Nouvel InfoSlot : Minecraft Day, sachez combien de jours Minecraft vous avez joué !</li>
+<li>Ajouté&nbsp;: Nouvelle orientation de la mini-carte, rectangle vertical</li>
+<li>Ajouté&nbsp;: Nouvelle option dans l'écran de position de la mini-carte pour masquer les icônes d'effet</li>
+<li>Ajouté&nbsp;: Nouveau menu de sélection d'icônes de point de cheminement lorsqu'il y a beaucoup d'icônes ajoutées via le pack de ressources</li>
+<li>Ajouté&nbsp;: Nouvelle option WaypointGroup pour définir des groupes comme groupes par défaut pour les nouveaux waypoints</li>
+<li>Ajouté&nbsp;: bouton Ouvrir le dossier sur l'écran Options qui ouvre votre dossier JourneyMap</li>
+<li>Ajouté&nbsp;: Option pour masquer l'arrière-plan de l'étiquette de la balise de point de cheminement</li>
+<li>Ajouté&nbsp;: Option pour suspendre la carte en plein écran</li>
+<li>Ajouté&nbsp;: Option pour afficher ou masquer la superposition des icônes de type de carte lors du changement de type de carte de la mini-carte</li>
+<li>Ajouté&nbsp;: mise à l'échelle des icônes Pokémon</li>
+<li>Ajouté&nbsp;: sauvegarde des fichiers de points de cheminement et chargement automatique des dernières en cas d'échec, amélioration de la sauvegarde, donc moins de modification de la corruption des fichiers.</li>
+<li>Ajouté&nbsp;: Option de serveur pour désactiver les noms de joueurs avec le radar des joueurs- Ajouté : Prise en charge d'AMECS pour trop de raccourcis</li>
+<li>Ajouté&nbsp;: Prise en charge de Controlify sur la carte plein écran</li>
+<li>Ajouté&nbsp;: Texte d'avertissement à mapper automatiquement lorsque c2me est installé</li>
+<li>Ajouté&nbsp;: option Waypoint Beacon pour ignorer le paramètre de distance de rendu maximale de Vanilla</li>
+<li>Ajouté&nbsp;: option Waypoint Beacon, masquer automatiquement l'étiquette verticalement. par défaut&nbsp;: vrai</li>
+<li>Ajouté&nbsp;: l'éditeur de waypoint dispose désormais de paramètres individuels par point de cheminement, avec des remplacements au niveau du groupe pour les mêmes paramètres</li>
+<li>Ajouté&nbsp;: bouton Waypoint Manager pour importer des waypoints externes depuis Xaeros. Le bouton n'existe que si les waypoints de xaero sont détectés</li>
+<li>Ajouté&nbsp;: Option Waypoints pour ouvrir le gestionnaire de waypoints dans votre dimension actuelle</li>
+<li>Ajouté&nbsp;: bouton d'invalidation du zoom LOD dans la fenêtre contextuelle Supprimer la carte</li>
+<li>Ajout&nbsp;:&nbsp;{name} à la commande de point de cheminement personnalisé</li>
+</ul>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Modifié&nbsp;: valeur minimale du cache réduite de 1&nbsp;000&nbsp;ms à 100&nbsp;ms</li>
+<li>Modifié&nbsp;: le client enverra des paquets au serveur si le serveur a initié la connexion, même s'il ne figure pas dans la liste des chaînes enregistrées</li>
+<li>Modifié&nbsp;: les icônes Pixelmon forcées ont toujours la même taille, en raison de l'incapacité des développeurs du pack de ressources à avoir une cohérence (26.1 uniquement).</li>
+<li>Modifié&nbsp;: le remplacement des couleurs de groupe est divisé en remplacements distincts d'icône, de couleur d'icône, de balise et d'étiquette par ligne.</li>
+<li>Modifié&nbsp;: Gérer les problèmes de stb-image-resize entre lwjgl 3.3.3 et 3.3.6</li>
+<li>Modifié&nbsp;:&nbsp;contrôles de sécurité d'importation et pré-sauvegarde avant l'importation, avec quelques contrôles de sécurité d'enregistrement de fichiers</li>
+<li>Changé&nbsp;: la vitesse de rendu de la carte a augmenté, les mises à jour de la carte sont beaucoup plus rapides maintenant&nbsp;!</li>
+<li>Changé&nbsp;:&nbsp;Plus de sauvegardes de points de cheminement</li>
+<li>Modifié&nbsp;: icône et texte du point de cheminement déplacés vers les API du modloader (26.1 uniquement)</li>
+<li>Modifié&nbsp;: les noms des joueurs sont passés aux noms d'affichage</li>
+<li>Modifié&nbsp;: Fonction de fusion de polygones afin qu'elle ne montre pas ce qui se trouve derrière la carte (26.1 uniquement)</li>
+<li>Modifié&nbsp;: les commandes du serveur ont été déplacées sous le préfixe /jm. La commande waypoint est donc désormais "/jm waypoint" ou "/jm wp".</li>
+<li>Modifié&nbsp;: le point de cheminement partagé n'utilise plus de mix de chat, utilise les commandes client spécifiques au modloader</li>
+<li>Modifié&nbsp;: les couleurs maximales de la topographie ont été augmentées de 128 à 2048.</li>
+<li>Modifié&nbsp;: tri des noms de Waypoint et WaypointGroup pour trier par alphanumérique au lieu d'un simple tri de chaîne Java</li>
+</ul>
+<h3 id="updated">Updated</h3>
+<ul>
+<li>Mise à jour&nbsp;: la surface du Nether est plus lumineuse et le type de carte de nuit a été supprimé du Nether.</li>
+<li>Mise à jour&nbsp;: Réécriture&nbsp;: À propos de l'écran pour utiliser les mises en page (1.21.1 uniquement)</li>
+<li>Mise à jour&nbsp;: réécriture&nbsp;:&nbsp;à propos de l'écran pour utiliser les mises en page. (les skins des joueurs sont cassés) (26.1 uniquement)</li>
+<li>Mise à jour&nbsp;: réécriture du code de récupération de la tête du joueur</li>
+<li>Mise à jour&nbsp;: traductions espagnoles et ajout de variantes espagnoles supplémentaires</li>
+</ul>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Corrigé&nbsp;:&nbsp;les entrées «&nbsp;Quoi de neuf&nbsp;» se dupliquaient lors de la revisite de l'écran À propos</li>
+<li>Corrigé&nbsp;: [1.21.6] Le flou des tuiles de région n'est pas effacé lors d'un zoom avant (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: [1.21.6]&nbsp;:&nbsp;Paramètre du groupe de points de cheminement pour afficher l'icône du point de cheminement sur la barre de localisation. Par défaut&nbsp;:&nbsp;Vrai (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: [1.21.7] Problèmes avec l'automap sur les mondes World Painter (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: [1.21.8] Affichage de la mini-carte pour la version de forge 58.0.9+ qui est également la version minimale requise à l'avenir (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: [Tissu]&nbsp;: Certains mods qui modifient le partage de discussion des points de cheminement des interruptions de discussion</li>
+<li>Corrigé&nbsp;: quelques problèmes de mémoire supplémentaires (26.1 uniquement)</li>
+<li>Corrigé : Annonce de la barre d'action lors de la désactivation/activation du rendu des waypoints</li>
+<li>Corrigé&nbsp;: ajustement de la façon dont les couleurs des blocs de fleurs modifiées sont calculées</li>
+<li>Corrigé : Option avancée : Désactiver le fondu de l'icône de la foule en fonction de la distance verticale du joueur</li>
+<li>Corrigé&nbsp;: après avoir utilisé /transfer, JourneyMap passe désormais au répertoire de données cartographiques correct pour le nouveau serveur</li>
+<li>Corrigé&nbsp;: problèmes d'alias avec les lignes de quadrillage et le texte sur la carte lors d'un zoom avant</li>
+<li>Corrigé&nbsp;: l'option Toujours cartographier les grottes provoquait des problèmes de distance de rendu lorsqu'elle était activée</li>
+<li>Corrigé : Always Map Caves cartographiera toutes les couches de grottes</li>
+<li>Corrigé : Un problème avec l'importation de waypoints depuis xaeros avec le multijoueur</li>
+<li>Corrigé : Ancienne méthode inutilisée qui pouvait signaler certains AV comme faux positifs</li>
+<li>Corrigé&nbsp;: un autre cas limite qui pouvait empêcher certains biomes de se fondre sur les bords des morceaux</li>
+<li>Corrigé&nbsp;: un autre correctif pour les GPU Intel ARC provoquant le clignotement des boutons sur la carte plein écran (26.1 uniquement)</li>
+<li>Corrigé : Un autre problème avec le client Feather qui cassait des choses (1.21.11, 26.1, 26.2 uniquement)</li>
+<li>Corrigé&nbsp;: un autre crash de Waypoint</li>
+<li>Corrigé&nbsp;: tentative de correction de rares plantages du GPU nvidia</li>
+<li>Corrigé&nbsp;: sauvegarde automatique du fichier WaypointData.dat au chargement. Chargera la sauvegarde si des problèmes sont détectés avec le fichier principal</li>
+<li>Corrigé&nbsp;: option Masquer automatiquement l'étiquette du point de cheminement</li>
+<li>Corrigé&nbsp;: le bouton AutoMap apparaissait en multijoueur alors qu'il ne devrait pas (26.1 uniquement)</li>
+<li>Corrigé&nbsp;:&nbsp;Automap sur des mondes à hauteur illimitée</li>
+<li>Corrigé&nbsp;: l'écran Automap réécrit sous forme de popup</li>
+<li>Corrigé&nbsp;: la cartographie automatique d'une zone génère désormais tous les types de cartes de surface (Jour/Nuit, Topographie, Biome) au lieu de seulement Jour et Nuit.</li>
+<li>Corrigé&nbsp;: vitesse de mappage automatique</li>
+<li>Corrigé&nbsp;: les bébés mobs causaient des problèmes (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: le shader de la carte de base ne fonctionne pas toujours (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: rendu des balises lorsque des shaders sont utilisés</li>
+<li>Corrigé&nbsp;: meilleur nettoyage des images de région une fois expirées</li>
+<li>Corrigé&nbsp;: corrections de couleurs du biome</li>
+<li>Corrigé&nbsp;: recherche de couleur du biome</li>
+<li>Corrigé&nbsp;: carte du biome cartographiant l'eau avec mapBathymetry activé</li>
+<li>Corrigé&nbsp;: problèmes de carte vierge lorsque vous êtes sous terre et cliquez sur Suivre, lorsque le serveur désactive la cartographie des grottes.</li>
+<li>Corrigé&nbsp;: icônes de poisson cassées provenant des poissons d'aquaculture et éventuellement d'autres mods</li>
+<li>Corrigé&nbsp;: packs de ressources d'icônes de foule Broken Legacy</li>
+<li>Corrigé&nbsp;: Bug pour faire glisser la carte zoomée</li>
+<li>Corrigé&nbsp;: Bouton pour remplir une palette avec les couleurs par défaut- Corrigé&nbsp;:&nbsp;vidage du cache sur les disques durs plus lents provoquant un pic de décalage</li>
+<li>Corrigé&nbsp;: le cache n'obtient pas correctement la clé du biome</li>
+<li>Corrigé&nbsp;: options de cartographie pour ajuster la hauteur maximale pour les calculs de topographie</li>
+<li>Corrigé&nbsp;: le mappage automatique des grottes n'affichant pas les lumières</li>
+<li>Corrigé&nbsp;: l'éclairage de la grotte lorsqu'il est désactivé, l'option "utiliser l'éclairage de la grotte" ne rend que les blocs avec une valeur de lumière</li>
+<li>Corrigé&nbsp;: le rendu CaveSurface ne démarre plus en noir</li>
+<li>Corrigé&nbsp;: vérifiez BlockColors pour voir si les feuilles doivent suivre la couleur du biome (1.21.1 uniquement)</li>
+<li>Corrigé&nbsp;: case à cocher pour confirmer la suppression du monde solo afin de supprimer également les données JM pour le monde</li>
+<li>Corrigé&nbsp;: couleurs des pétales de cerise</li>
+<li>Corrigé&nbsp;: le cache de fragments ne conserve pas les données&nbsp;; bloquer les données uniquement disponibles dans la plage de rendu</li>
+<li>Corrigé&nbsp;: effacer les documents</li>
+<li>Corrigé&nbsp;:&nbsp;Effacement du cache radar du joueur lors de la déconnexion du serveur</li>
+<li>Corrigé : Effacement d'un état sur le serveur en quittant le jeu</li>
+<li>Corrigé&nbsp;:&nbsp;Fermeture de la pile entière lorsqu'un élément de menu contextuel est sélectionné</li>
+<li>Corrigé&nbsp;: icônes de PNJ Cobblemon (principalement)</li>
+<li>Corrigé&nbsp;: partage de discussion sur les points de cheminement Cobblemon NPC</li>
+<li>Corrigé : Compatibilité avec les icônes Chococraft</li>
+<li>Corrigé&nbsp;: compatibilité avec les icônes Doggy Talent</li>
+<li>Corrigé&nbsp;: Crash de compatibilité avec Tectonic lors du mappage automatique de morceaux (26.1 uniquement)</li>
+<li>Corrigé : Problème de compatibilité avec Moonrise</li>
+<li>Corrigé : Compatibilité avec les icônes d'effet de masquage et le mod Raised</li>
+<li>Corrigé&nbsp;: correctif d'exception de modification simultanée</li>
+<li>Corrigé&nbsp;: gérer correctement les icônes des mobs qui ne pouvaient pas être générés</li>
+<li>Corrigé : Sélectionne correctement la palette "tout" lorsqu'il n'y a plus de couleurs dans la palette sélectionnée</li>
+<li>Corrigé&nbsp;: Crash causé par un bug ETF avec ImmédiatementFast (1.21.11, 26.1 uniquement)</li>
+<li>Corrigé : Crash si pour une raison quelconque un waypoint n'a pas de groupe</li>
+<li>Corrigé : Crash lié au mod "Supprimer l'écran de rechargement"</li>
+<li>Corrigé&nbsp;: crash lorsque vous cliquez sur un bouton Accepter/Refuser par ligne sur l'écran des waypoints en attente</li>
+<li>Corrigé&nbsp;: Crash lors de l'activation et de la désactivation des waypoints et des groupes de waypoints en mode solo</li>
+<li>Corrigé&nbsp;: Crash lors de la configuration de l'icône du groupe remplacée</li>
+<li>Corrigé&nbsp;: Crash lorsque le worldId est envoyé avant que le joueur ne soit chargé dans le monde</li>
+<li>Corrigé&nbsp;: Crash avec suppression automatique des points de mort activé</li>
+<li>Corrigé&nbsp;: Crash avec les rediffusions du mod Flachback</li>
+<li>Corrigé&nbsp;: Crash avec des textures mises à l'échelle</li>
+<li>Corrigé&nbsp;: Crash avec les waypoints et la nouvelle barre de localisation (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: les couleurs de la carte des dimensions personnalisées changent selon le cycle jour/nuit&nbsp;; Carte de fin de nuit supprimée</li>
+<li>Corrigé&nbsp;: programme de shader personnalisé pour corriger les opacités inférieures à 0,1F</li>
+<li>Corrigé&nbsp;: le cadre de la mini-carte du thème personnalisé persiste lors du changement de thème</li>
+<li>Corrigé&nbsp;: les caches de données ne se réinitialisent pas correctement si le mappage est désactivé</li>
+<li>Corrigé&nbsp;: buisson mort et herbes hautes sur les plantes (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: Filtrage des points de mort lorsque les clients désactivent la création de points de mort sur un serveur (ou en mode solo) qui gère les points de cheminement</li>
+<li>Corrigé&nbsp;: entrée de débogage dans Fabric (26.1 uniquement)</li>
+<li>Corrigé&nbsp;:&nbsp;affichage du lecteur par défaut sur les icônes décrites- Corrigé&nbsp;: commande de téléportation Vanilla par défaut pour utiliser "/execute in {dim} run tp {name} {x} {y} {z}"</li>
+<li>Corrigé&nbsp;: Supprimer l'écran de la carte réécrit sous forme de popup</li>
+<li>Corrigé&nbsp;: Supprimer les waypoints dans les groupes natifs</li>
+<li>Corrigé&nbsp;: la suppression d'une région spécifique force le remappage à proximité</li>
+<li>Corrigé : La suppression d'un waypoint de l'éditeur de waypoint ferme désormais l'éditeur après confirmation</li>
+<li>Corrigé&nbsp;:&nbsp;la suppression de groupes de points de cheminement supprime tous les points de cheminement</li>
+<li>Corrigé&nbsp;:&nbsp;désactivation du mipmapping pour les GPU Arc en raison d'une mauvaise prise en charge d'OpenGL (1.21.1 uniquement)</li>
+<li>Corrigé&nbsp;: les waypoints désactivés n'apparaissent plus sur la barre de localisation (26.1 uniquement)</li>
+<li>Corrigé : Désactivation des points de mort par le serveur provoquant des problèmes étranges</li>
+<li>Corrigé&nbsp;: Afficher les morceaux chargés pour les administrateurs</li>
+<li>Corrigé&nbsp;: Afficher l'événement de mise à jour pour être appelé sur la fermeture de la carte en plein écran</li>
+<li>Corrigé&nbsp;: texte d'information déformé sur la carte en plein écran</li>
+<li>Corrigé : Ne dessinez pas de textes avec une opacité de 0 car Minecraft les dessine avec une opacité totale</li>
+<li>Corrigé : Dessiner les polygones derrière les autres superpositions comme cela se faisait dans les versions précédentes (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: Crash de DynamicTextures lors du chargement à partir du thread principal</li>
+<li>Corrigé&nbsp;: l'activation du rendu d'un waypoint Overworld dans le Nether modifie la position du waypoint</li>
+<li>Corrigé&nbsp;: collection d'entités pour le nettoyage et les optimisations du radar</li>
+<li>Corrigé&nbsp;: problèmes de performances de la collection d'entités (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: l'icône d'entité efface les couleurs d'arrière-plan (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: les icônes d'entité apparaissent et disparaissent lors d'un zoom avant et arrière. Corrigé&nbsp;: les icônes d'entité semblent tordues et bizarres, signalez tout autre problème avec les icônes (26.1 uniquement)</li>
+<li>Corrigé : les icônes d'entité ne tournent plus avec la mini-carte lorsqu'elle est définie sur « Mon cap » ; ils restent une fois de plus descendants (26.1, 26.2 seulement)</li>
+<li>Corrigé&nbsp;: erreurs de Journeymap si le serveur plante, donnant un faux négatif lorsque JM tente d'accéder au serveur en panne</li>
+<li>Corrigé&nbsp;: erreurs lorsque les packs de ressources utilisent des noms d'espace de noms non valides</li>
+<li>Corrigé&nbsp;: intégration essentielle du serveur PTP</li>
+<li>Corrigé : Exception levée depuis un serveur nul si le serveur plante par un autre mod</li>
+<li>Corrigé&nbsp;:&nbsp;Exceptions provoquées lors de la recherche de waypoints externes provoquant un crash lors de l'ouverture du gestionnaire de waypoints</li>
+<li>Corrigé&nbsp;:&nbsp;E/S disque excessives lors des écritures du cache au niveau du zoom lors de l'exploration</li>
+<li>Corrigé&nbsp;: E/S excessives à la déconnexion et sauvegarde excessive des images de région inchangées</li>
+<li>Corrigé : Fabric - se déconnecter lorsque les messages n'ont pas de signature pour le partage de waypoint</li>
+<li>Corrigé&nbsp;: double rendu de la mini-carte Fabric</li>
+<li>Corrigé&nbsp;: extraction de thèmes de fichiers et d'éléments de carte Web sur certaines distributions Linux</li>
+<li>Corrigé&nbsp;: Correction du compteur de jours ne respectant pas la règle de jeu dodaylightcycle</li>
+<li>Corrigé&nbsp;: Correction d'un crash de forge</li>
+<li>Corrigé&nbsp;: Correction d'un événement de création de groupe</li>
+<li>Corrigé : Correction des problèmes de compatibilité de l'inventaire hud+</li>
+<li>Corrigé&nbsp;: Correction d'un problème de migration de points de cheminement supplémentaires</li>
+<li>Corrigé&nbsp;: Correction du chagne cassant Neoforge dans 26.1.2.19 (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: correction du rendu des points de cheminement du Nether</li>
+<li>Corrigé&nbsp;: correction de la conversion des couleurs et du sélecteur de couleurs dans l'éditeur de grille (26.1 uniquement)- Corrigé&nbsp;: correction des étiquettes de points de cheminement masquées lorsque l'écran de discussion est ouvert</li>
+<li>Corrigé&nbsp;: Correction du waypoint qui n'était pas enregistré</li>
+<li>Corrigé&nbsp;: correction d'une bizarrerie de point de cheminement dans le Nether, toujours pas parfaite</li>
+<li>Corrigé : Correction de la cartographie désactivée, rupture des waypoints ferme #47</li>
+<li>Corrigé&nbsp;: forcer la purge de toutes les images de la mémoire avant de quitter le jeu</li>
+<li>Corrigé&nbsp;: les icônes Pixelmon forcées ont toujours la même taille, en raison de l'incapacité des développeurs du pack de ressources à avoir une cohérence (1.21.1 uniquement).</li>
+<li>Corrigé&nbsp;: Forge et NeoForge obtenaient des couleurs fluides (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: problème Forge et NeoForge avec f3+f4 (1.21.1 uniquement)</li>
+<li>Corrigé&nbsp;: Forge et NeoForge ne mettent pas à jour correctement les événements de blocage et de rupture.</li>
+<li>Corrigé&nbsp;: spam du journal Forge (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: crash de Forge Optifine (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: le suivi en plein écran empêchant la commutation manuelle de la surface vers/depuis le sous-sol sans interrompre manuellement le suivi</li>
+<li>Corrigé&nbsp;: le suivi plein écran se désactive lors de la transition entre la surface et le sous-sol</li>
+<li>Corrigé&nbsp;: les boutons de carte plein écran scintillent sur les GPU Intel (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: les barres de texte de la carte en plein écran ne sont pas toujours dans la bonne position</li>
+<li>Corrigé&nbsp;: Option plein écran pour masquer le bouton de thème sur la carte plein écran</li>
+<li>Corrigé&nbsp;: curseur de tranche plein écran lorsque les hauteurs inférieures ne sont pas celles par défaut</li>
+<li>Corrigé&nbsp;: téléportation du point de cheminement en plein écran lorsque le point de cheminement est en dessous des blocs</li>
+<li>Corrigé&nbsp;: les emplacements d'informations sur l'heure de jeu ne suivent pas le temps dans le Nether (26.1, 26.2 uniquement)</li>
+<li>Corrigé&nbsp;: régression de l'affichage GameTime pour l'emplacement d'informations</li>
+<li>Corrigé : GameTime InfoSlot sautant des minutes</li>
+<li>Corrigé&nbsp;: obtenez le tampon des lignes de trait entre différents segments pour empêcher la géométrie de se joindre</li>
+<li>Corrigé&nbsp;: obtenir les couleurs correctes des entités de bloc</li>
+<li>Corrigé&nbsp;: obtenir des aquarelles par défaut pour des mods comme EssentialsClient qui le casse</li>
+<li>Corrigé&nbsp;: Glyphes vers les images</li>
+<li>Corrigé : écran de l'éditeur de grille réécrit sous forme de popup</li>
+<li>Corrigé&nbsp;:&nbsp;un événement de création de groupe se déclenchait deux fois</li>
+<li>Corrigé&nbsp;: événement de transfert de groupe</li>
+<li>Corrigé&nbsp;: gérer le fichier de données de point de cheminement corrompu</li>
+<li>Corrigé&nbsp;: la logique de prise de contact était effacée par erreur, empêchant la mise à jour des points de cheminement lors du changement de luminosité (26.1 uniquement).</li>
+<li>Corrigé&nbsp;: masquer les boutons plein écran et les touches de rendu des points de cheminement non liés</li>
+<li>Corrigé&nbsp;: les animaux de compagnie des chevaux brisant le rendu radar de l'entité (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: rendu des chevaux sur la carte (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: icônes de waypoint ressemblant à une maison</li>
+<li>Corrigé&nbsp;: les icônes de glace et de feu s'affichaient sous forme de texture complète. Des packs de ressources sont nécessaires pour les icônes</li>
+<li>Corrigé&nbsp;: génération d'icônes pour les mobs qui utilisent un TextureAtlas au lieu d'un DynamicTexture et pour les mobs qui étendent EntityModel et ont des champs modelparts où aucun n'est en tête (1.21.1 uniquement)</li>
+<li>Corrigé&nbsp;:&nbsp;option Ignorer les cartes de hauteur</li>
+<li>Corrigé&nbsp;: problème ImmédiatementFast avec le texte de la mini-carte</li>
+<li>Corrigé&nbsp;: correctif des portails immersifs</li>
+<li>Corrigé&nbsp;: la boîte de dialogue d'importation bloquait le fil de jeu, provoquant des déconnexions sur les serveurs</li>
+<li>Corrigé&nbsp;: Importer Xaeros en important des waypoints sur des serveurs multijoueurs- Corrigé&nbsp;: l'importation d'un fichier zip mondial peut s'arrêter sur une mauvaise lecture de fichier et arrêter l'exportation complète, maintenant elle ignore le mauvais fichier et continue</li>
+<li>Corrigé : Importation et migration d'anciens waypoints (1.7.10/1.12.2)</li>
+<li>Corrigé&nbsp;: problème lors de la désactivation de WorldId</li>
+<li>Corrigé&nbsp;: un problème lorsque les icônes d'entité ne peuvent pas être générées peut provoquer un peu de spam dans les journaux.</li>
+<li>Corrigé&nbsp;: problème de réinitialisation des paramètres de groupe intégrés</li>
+<li>Corrigé&nbsp;: problème avec la carte en plein écran avec les mods "Visual Overhaul" et "Fancy Menu" installés en même temps</li>
+<li>Corrigé&nbsp;: problème avec MacOS et les écrans Retina (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: problème avec les données cartographiques qui devenaient géniales lors du changement du pack de ressources (1.21.1 uniquement)</li>
+<li>Corrigé&nbsp;: problème avec les mipmaps qui n'étaient pas téléchargés sur le GPU pour certains utilisateurs (1.21.1 uniquement)</li>
+<li>Corrigé&nbsp;: problèmes d'obtention du nom du serveur de domaine (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: problèmes lors de la migration de milliers de waypoints à partir d'anciennes versions</li>
+<li>Corrigé&nbsp;: problèmes lors de l'utilisation du bouton de la souris pour ouvrir/fermer la carte en plein écran</li>
+<li>Corrigé&nbsp;: problèmes avec les groupes par défaut qui n'étaient pas créés sur les nouveaux mondes</li>
+<li>Corrigé&nbsp;: problèmes avec le mod immédiatement rapide (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: problèmes avec l'eau lors du mappage automatique des cartes topographiques (1.21.1 uniquement)</li>
+<li>Corrigé&nbsp;: la mini-carte JourneyMap n'interfère plus avec le rendu HUD des autres mods (1.21.1 uniquement)</li>
+<li>Corrigé&nbsp;: crash de la JVM lors de l'écriture d'images de carte de région sur le disque</li>
+<li>Corrigé&nbsp;: raccourci clavier pour suivre le joueur</li>
+<li>Corrigé&nbsp;: performances d'E/S du disque de grande carte</li>
+<li>Corrigé&nbsp;: cache de couleurs paresseux</li>
+<li>Corrigé&nbsp;: couleurs des feuilles</li>
+<li>Corrigé&nbsp;: Lignes en haut et en bas des volets de défilement</li>
+<li>Corrigé&nbsp;: Crash du mixin Locatorbar (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: les tuiles LOD (carte zoomée) ne se mettent pas à jour en direct lorsque de nouveaux morceaux sont cartographiés (1.21.1 uniquement)</li>
+<li>Corrigé&nbsp;: journaliser le spam causé par le mélange des couleurs du biome</li>
+<li>Corrigé&nbsp;: enregistrer le spam si le serveur désactive les points de mort et que l'utilisateur n'a jamais eu de point de mort</li>
+<li>Corrigé&nbsp;: Long blocage lors de la déconnexion d'un monde causé par des sauvegardes de points de cheminement se redéclenchant à plusieurs reprises.</li>
+<li>Corrigé&nbsp;: Lunar Client n'affichant pas les tuiles de la carte (1.21.11 uniquement)</li>
+<li>Corrigé&nbsp;: l'interface Npc.class est gérée un peu différemment de celle de pathfindermob.class.</li>
+<li>Corrigé&nbsp;: sélections défectueuses dans la palette de couleurs</li>
+<li>Corrigé&nbsp;: shaders de filtre de carte (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: la carte n'efface pas les anciennes tuiles de la carte dimensionnelle pour certains serveurs personnalisés qui ne mettent pas à jour la dimension du joueur (1.21.1 uniquement).</li>
+<li>Corrigé&nbsp;: Distance de rendu de la carte</li>
+<li>Corrigé&nbsp;: Map Shaders interrompant le chargement du mod sous Linux</li>
+<li>Corrigé&nbsp;: les tuiles de carte ne sont pas enregistrées lorsque vous quittez le jeu juste après la génération de la tuile.</li>
+<li>Corrigé&nbsp;: le type de carte permute les régions manquantes</li>
+<li>Corrigé&nbsp;: correctifs pour MapImage</li>
+<li>Corrigé&nbsp;: MapImage utilise textureWidth/Height incorrectement échangé avec displayWidth/Height</li>
+<li>Corrigé&nbsp;: les superpositions de marqueurs et d'images utilisent incorrectement le flou MapImage.</li>
+<li>Corrigé&nbsp;: les superpositions de marqueurs n'utilisaient pas les paramètres de texture de leur icône (26.1 uniquement)</li>
+<li>Corrigé&nbsp;:&nbsp;Les options principales ne désactivent pas toutes les autres options de la catégorie (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: port maximum 65535 pour la carte Web- Corrigé&nbsp;: fuite de mémoire</li>
+<li>Corrigé&nbsp;: fuite de mémoire lors de la prévisualisation de la mini-carte</li>
+<li>Corrigé : Minimap derrière les écrans ne respectant pas le bouton de visibilité</li>
+<li>Corrigé&nbsp;: la mini-carte était masquée lorsque le chat est ouvert</li>
+<li>Corrigé&nbsp;: la mini-carte pouvait apparaître à sa taille minimale après la connexion en raison d'un bug MC modifiant la taille du frame buffer +1 sur le y (26.1 uniquement)</li>
+<li>Corrigé : masquage de profondeur de la mini-carte cassé sur certains pilotes Vulkan Intel (26.2 uniquement)</li>
+<li>Corrigé&nbsp;: la mini-carte changeait incorrectement de position lors du déplacement des emplacements d'information.</li>
+<li>Corrigé&nbsp;: la mini-carte était en retard par rapport à la bordure lorsque vous la faisiez glisser dans l'écran de position de la mini-carte (1.21.11, 26.1, 26.2 uniquement).</li>
+<li>Corrigé&nbsp;: la mini-carte ne s'affiche pas parfois avec le client Feather (1.21.11, 26.1, 26.2 uniquement)</li>
+<li>Corrigé&nbsp;: les points de la mini-carte et le bord étaient inversés (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: option de position de la mini-carte, déplacez les emplacements d'information vers le haut ou le bas</li>
+<li>Corrigé&nbsp;: rendu de la mini-carte derrière la superposition de l'écran de débogage</li>
+<li>Corrigé&nbsp;: la flèche automatique de la MiniMap est dessinée sous d'autres icônes (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: correction d'un crash de l'icône Mob</li>
+<li>Corrigé&nbsp;: compatibilité des modules avec OkZoomer (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: ModCompat amecs-reborn</li>
+<li>Corrigé&nbsp;: problèmes ModCompat avec ImmédiatementFast pour les waypoints et la mini-carte</li>
+<li>Corrigé&nbsp;: ModCompat avec VulkanMod</li>
+<li>Corrigé&nbsp;: prise en charge du menu Mod</li>
+<li>Corrigé : Plus de correctifs pour les problèmes avec les icônes qui ne génèrent pas</li>
+<li>Corrigé : Plus de correctifs en place pour empêcher les CCM lors du rendu des waypoints et ajout d'une meilleure journalisation</li>
+<li>Corrigé&nbsp;:&nbsp;Plus de problèmes liés aux LOD de zoom qui ne se remplissent pas correctement</li>
+<li>Corrigé : Plus de problèmes de royaumes (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: Plus de problèmes de rechargement des shaders</li>
+<li>Corrigé&nbsp;: déplacement du rendu de la décoration des points de cheminement Forge et NeoForge vers les API du chargeur de mod (1.21.1 uniquement)</li>
+<li>Corrigé&nbsp;: crash de mémoire native insuffisante lors de l'enregistrement de la carte (GitHub #1060) (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: le changement radical de NeoForge nécessite la version 21.10.34-beta et supérieure (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: problèmes de Neoforge avec les ressources rechargeables (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: rendu de la mini-carte NeoForge sur l'écran f3 (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: couleurs du Nether (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: Plus de valeurs de diffusion en continu vers une liste, provoquant un crash</li>
+<li>Corrigé&nbsp;: Optimisation du chargement des tuiles de carte</li>
+<li>Corrigé&nbsp;: option permettant de désactiver le partage du point de cheminement, supprime également la position du chat du menu contextuel de la carte plein écran.</li>
+<li>Corrigé&nbsp;: Option pour désactiver la confirmation de suppression du point de cheminement</li>
+<li>Corrigé&nbsp;: les onglets de l'écran Options ne réinitialisaient pas la position de la souris au centre de l'écran</li>
+<li>Corrigé&nbsp;: les étiquettes superposées vibraient</li>
+<li>Corrigé&nbsp;: les superpositions ne s'affichaient jamais lorsqu'elles étaient ajoutées avec une plage de zoom qui n'inclut pas le zoom actuel</li>
+<li>Corrigé&nbsp;: performances améliorées en mode solo avec événements de blocage</li>
+<li>Corrigé : Problème de performances sur la carte plein écran avec le mod Terrain Diffusion MC</li>
+<li>Corrigé&nbsp;: problème de performances avec le rendu de la carte (1.21.1 uniquement)</li>
+<li>Corrigé&nbsp;: problèmes de performances avec un zoom élevé</li>
+<li>Corrigé&nbsp;: les icônes Pixelmon sont floues lors du premier rendu sur la carte (1.21.1 uniquement)</li>
+<li>Corrigé&nbsp;: les têtes des joueurs sont floues</li>
+<li>Corrigé&nbsp;: les têtes des joueurs ne s'affichent pas dans tous les cas (26.1 uniquement)- Corrigé&nbsp;: les icônes des joueurs ne s'affichaient pas pour les noms de joueurs non anglais (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: le paquet d'emplacements des joueurs est plus optimisé, utilise moins de paquets et moins de données</li>
+<li>Corrigé : Les joueurs ne respectaient pas la valeur de portée dans les paramètres</li>
+<li>Corrigé&nbsp;:&nbsp;les joueurs restaient sur la carte après une déconnexion sur les serveurs Velocity</li>
+<li>Corrigé&nbsp;: corrections de polygones (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: les polygones faisaient des choses amusantes lors d'un zoom arrière important (1.21.1 uniquement)</li>
+<li>Corrigé&nbsp;:&nbsp;les polygones s'affichent en dehors de la mini-carte</li>
+<li>Corrigé&nbsp;: problème de nom possible lors de la connexion à un serveur de royaumes depuis le lanceur</li>
+<li>Corrigé&nbsp;: blocage de fil possible avec le mouvement de la souris sur la carte plein écran</li>
+<li>Corrigé : Crash potentiel si aucun groupe n'est sélectionné lors de la sauvegarde d'un waypoint</li>
+<li>Corrigé : Crash potentiel avec certaines affectations de boutons PS5 avec Controlify</li>
+<li>Corrigé&nbsp;:&nbsp;Empêcher les waypoints d'occuper les mêmes cordons xz</li>
+<li>Corrigé : Empêcher une fausse icône de remplacer une autre icône dans TextureManager, fermant l'icône précédente</li>
+<li>Corrigé&nbsp;:&nbsp;empêcher les exceptions d'échapper au processus de génération d'icônes (1.21.1 uniquement)</li>
+<li>Corrigé&nbsp;: les boutons radio n'apparaissaient pas dans l'éditeur de grille ou dans l'éditeur de disposition des coordonnées de point de cheminement (26.1 uniquement)</li>
+<li>Corrigé : Rare blocage du client (bloqué sur "Chargement du terrain") lors du rendu de la mini-carte lors d'un changement de dimension (1.21.1, 1.21.11 uniquement)</li>
+<li>Corrigé&nbsp;: condition de crash rare</li>
+<li>Corrigé&nbsp;: crash rare lors de l'acceptation d'un waypoint en attente</li>
+<li>Corrigé : Crash rare lors de la gestion des waypoints sur un serveur</li>
+<li>Corrigé&nbsp;: problème rare où les balises de waypoint ne s'afficheront pas</li>
+<li>Corrigé&nbsp;: problèmes de changement d'état de royaume lors de la connexion ou de la sortie d'un royaume</li>
+<li>Corrigé&nbsp;: réduction du micro-stutter du fil de rendu lorsque la mini-carte charge les images de région</li>
+<li>Corrigé&nbsp;: les tuiles de région n'étaient pas nettoyées correctement lors du changement de dimension</li>
+<li>Corrigé&nbsp;: les tuiles de région restaient vides</li>
+<li>Corrigé&nbsp;: les régions devenaient vides de manière aléatoire pendant la lecture</li>
+<li>Corrigé&nbsp;: problème de rendu avec le mod TES</li>
+<li>Corrigé&nbsp;: problèmes de rendu avec ImmediatlyFast (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: mappage de rupture de rechargement des ressources (26.1 uniquement)</li>
+<li>Corrigé : Annuler le forçage de la taille du pixelmon (1.21.1 uniquement)</li>
+<li>Corrigé&nbsp;: rétablir la taille de l'icône Pixelmon (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: compatibilité de mise à l'échelle avec QDAA</li>
+<li>Corrigé&nbsp;: mise à l'échelle sur macOS pour que les choses ne soient pas si petites (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: démarrage de la liste noire de l'écran</li>
+<li>Corrigé : Crash semi-rare lors de la suppression de la carte dans le jeu</li>
+<li>Corrigé&nbsp;: option d'administration du serveur pour désactiver tous les affichages de coordonnées</li>
+<li>Corrigé&nbsp;: les paramètres du radar de l'administrateur du serveur étaient ignorés en mode solo</li>
+<li>Corrigé&nbsp;: le bouton de sauvegarde de l'administrateur du serveur n'apparaissait pas</li>
+<li>Corrigé&nbsp;: le mélange du biome du serveur sur les morceaux nouvellement générés ne se mélange pas sur les bordures des morceaux</li>
+<li>Corrigé&nbsp;: Option du serveur pour ajuster la distance maximale de rendu de la grotte</li>
+<li>Corrigé&nbsp;: option du serveur pour désactiver le cross dim tp</li>
+<li>Corrigé&nbsp;: Option du serveur permettant de désactiver/activer la téléportation par clic droit sur la carte complète lorsque la téléportation par point de cheminement est activée</li>
+<li>Corrigé : Options du serveur pour ajuster les portées radar et le nombre d'entités- Corrigé&nbsp;: les serveurs ne parviennent pas à créer des fichiers de configuration, en raison de la modification par Mojang du fonctionnement de getServerDirectory()</li>
+<li>Corrigé&nbsp;: définir la taille de l'icône du waypoint par défaut sur 16</li>
+<li>Corrigé&nbsp;:&nbsp;Définition de la distance de rendu maximale sur le serveur</li>
+<li>Corrigé : Plusieurs crashs et erreurs liés aux waypoints</li>
+<li>Corrigé&nbsp;: les shaders déplacés vers le dossier assets/journeymap et unifiés en commun</li>
+<li>Corrigé&nbsp;:&nbsp;secouement des icônes et de la grille</li>
+<li>Corrigé : Mouvement tremblant des superpositions de marqueurs sur la mini-carte (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: ignorer les cages décoratives de Bosses'Rise car ce ne sont pas des mobs (1.21.1 uniquement)</li>
+<li>Corrigé&nbsp;: Quelques problèmes de couleur (26.1 uniquement)</li>
+<li>Corrigé : Quelques problèmes de carte plein écran sur les écrans MACOS Retina (1.21.1 uniquement)</li>
+<li>Corrigé&nbsp;: quelques problèmes de GC et de mémoire</li>
+<li>Corrigé&nbsp;: transparence de certains blocs de verre</li>
+<li>Corrigé&nbsp;: certaines vignettes d'images étaient corrompues lors des mises à jour lors d'une sortie forcée (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: certaines têtes de joueurs étaient rendues avec une teinte bleue (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: Quelques problèmes de pack de ressources pour les icônes de foule</li>
+<li>Corrigé&nbsp;: quelques corrections de points de cheminement</li>
+<li>Corrigé&nbsp;: trier les régions par distance du centre de la carte</li>
+<li>Corrigé&nbsp;: la mini-carte carrée présente des problèmes étranges avec la grille sur certains systèmes (1.21.11, 26.1, 26.2 uniquement).</li>
+<li>Corrigé&nbsp;: boucle de réinitialisation d'état lorsque le mappage est désactivé</li>
+<li>Corrigé&nbsp;:&nbsp;Slicing de surface sautant certains morceaux (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: le changement de type d'icône ne changeait pas réellement</li>
+<li>Corrigé&nbsp;: les noms des équipes ne s'affichent que lorsque l'option est désactivée.. oups</li>
+<li>Corrigé&nbsp;: le préfixe d'équipe affiché deux fois lorsque Afficher les noms d'équipe est activé</li>
+<li>Corrigé&nbsp;: carte automatique de rupture tectonique (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: se téléporter ou se déplacer rapidement dans un monde multijoueur peut ne pas rendre le mélange de biomes en raison de morceaux arrivant au client plus lentement que prévu.</li>
+<li>Corrigé&nbsp;: la téléportation vers le Nether depuis le monde extérieur était désactivée</li>
+<li>Corrigé&nbsp;:&nbsp;Téléportation une fois monté</li>
+<li>Corrigé&nbsp;: analyse de texte pour le partage de waypoints xaeros (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: les textures ne s'effacent pas correctement lors de la déconnexion mondiale et du spam du journal (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: Threadlock lors du déclenchement d'événements API à partir du thread Netty lors de la déconnexion d'un serveur multijoueur</li>
+<li>Corrigé&nbsp;: erreur de pré-lancement lorsque les utilisateurs de Fabric installent la version Forge ou NeoForge de Journeymap</li>
+<li>Corrigé&nbsp;: info-bulles dans le panneau sombre de l'éditeur de waypoints</li>
+<li>Corrigé : Transfert d'un waypoint dans un groupe verrouillé</li>
+<li>Corrigé&nbsp;: Transparence des icônes de foule se mélangeant avec la couleur des points</li>
+<li>Corrigé&nbsp;:&nbsp;mises à jour des couleurs de l'arbre et de l'eau</li>
+<li>Corrigé&nbsp;: couleurs des arbres lorsque le mélange de feuillage est désactivé</li>
+<li>Corrigé&nbsp;: correctif du niveau souterrain y (1.21.1 uniquement)</li>
+<li>Corrigé&nbsp;: lors de la mise à jour des valeurs x et z d'un waypoint, la valeur top-y sera extraite du cache si elle existe</li>
+<li>Corrigé&nbsp;: utiliser les icônes générées lorsqu'aucune icône héritée n'est trouvée</li>
+<li>Corrigé&nbsp;:&nbsp;les fichiers .dat de points de cheminement valides mal nommés sont migrés vers le serveur</li>
+<li>Corrigé : Divers problèmes visuels sur l'écran de la palette de couleurs</li>
+<li>Corrigé&nbsp;: problème d'analyse de version</li>
+<li>Corrigé&nbsp;: données cartographiques très anciennes</li>
+<li>Corrigé&nbsp;: problème de migration de waypoint très ancien- Corrigé&nbsp;: icône de villageois pour les images à thème plat, ajout d'un peu de flou gaussien</li>
+<li>Corrigé&nbsp;: les icônes des villageois étaient incorrectement remplacées par le code alternatif utilisé lorsque l'icône ne pouvait pas être générée (26.1 uniquement).</li>
+<li>Corrigé&nbsp;: les villageois clignotent parfois en rouge/vert sur la carte</li>
+<li>Corrigé&nbsp;: attendez que le bouton de thème se rouvre pour éviter de faire glisser la carte lors du changement de thème</li>
+<li>Corrigé&nbsp;: corrections de points de cheminement et de chargeur de services</li>
+<li>Corrigé&nbsp;: les codecs Waypoint renvoyant des cartes immuables</li>
+<li>Corrigé&nbsp;: la commande Waypoint plante parfois les serveurs</li>
+<li>Corrigé&nbsp;: affichage des dimensions des points de cheminement et de la liste des points de cheminement importés -&nbsp;C'est un hack tellement stupide, corrigez cette poubelle (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: l'éditeur de waypoint ignore la première pression sur une touche</li>
+<li>Corrigé&nbsp;:&nbsp;améliorations des points de cheminement</li>
+<li>Corrigé&nbsp;: les dossiers Waypoint ne s'actualisent pas après l'importation jusqu'à la reconnexion</li>
+<li>Corrigé&nbsp;: corrections du groupe Waypoint</li>
+<li>Corrigé&nbsp;: balises de groupe de points de cheminement à préfixer sur les noms de points de cheminement pour le groupe</li>
+<li>Corrigé&nbsp;: les groupes de waypoints peuvent utiliser des icônes personnalisées pour tous les waypoints du groupe.</li>
+<li>Corrigé&nbsp;: groupes de waypoints, suppression et masquage</li>
+<li>Corrigé&nbsp;: problèmes d'icône de point de cheminement lors de la suppression d'un pack de ressources d'icônes</li>
+<li>Corrigé&nbsp;: les icônes de waypoint ne s'affichent pas sur la carte Web (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: les icônes de waypoint s'affichent au-dessus du réticule</li>
+<li>Corrigé&nbsp;: les icônes de waypoint seront désormais toujours affichées</li>
+<li>Corrigé&nbsp;: correctifs du gestionnaire de points de cheminement</li>
+<li>Corrigé&nbsp;: le nom du waypoint n'est pas mis en surbrillance lors de l'ouverture de l'éditeur</li>
+<li>Corrigé&nbsp;: Option de point de cheminement "Afficher sur la barre de localisation" globale Par défaut&nbsp;: false (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: Option Waypoint pour afficher les têtes des joueurs dans le monde</li>
+<li>Corrigé&nbsp;: Option Waypoint pour supprimer les décimales de la commande /tp</li>
+<li>Corrigé&nbsp;: condition de concurrence critique pour le rendu du point de cheminement provoquant un crash de groupe nul</li>
+<li>Corrigé&nbsp;: la sauvegarde des points de cheminement ne devrait plus corrompre les fichiers de points de cheminement</li>
+<li>Corrigé&nbsp;: recherche de waypoint et autres correctifs</li>
+<li>Corrigé&nbsp;: fenêtre de sélection de waypoint lorsque les icônes sont ajoutées via le pack de ressources (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: la téléportation de waypoint pour les OP ne fonctionne que pour les niveaux de permis 2 et supérieurs.</li>
+<li>Corrigé&nbsp;: téléportation de waypoint</li>
+<li>Corrigé&nbsp;: Waypoint téléportant les calculs du Nether lorsque JM n'est pas sur le serveur</li>
+<li>Corrigé&nbsp;: le texte du waypoint se déplaçait lors de la désactivation du waypoint (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: des waypoints peuvent être ajoutés/supprimés du groupe temporaire</li>
+<li>Corrigé&nbsp;: les waypoints ne sont pas supprimés en mode solo</li>
+<li>Corrigé&nbsp;: problèmes étranges avec les points cardinaux avec un thème puriste</li>
+<li>Corrigé&nbsp;: comportement étrange de la souris lors de l'ouverture initiale de la carte en plein écran et du non-suivi du joueur.</li>
+<li>Corrigé&nbsp;: bizarrerie avec FancyMenu installé</li>
+<li>Corrigé&nbsp;: problèmes de bordure étranges dans les menus déroulants/popups</li>
+<li>Corrigé&nbsp;: spam du journal de fermeture du monde</li>
+<li>Corrigé&nbsp;: le zip World Export n'inclut pas WaypointData.dat sur les serveurs qui gèrent les waypoints et le mode solo</li>
+<li>Corrigé&nbsp;: Wpname pour le nom du point de cheminement dans la commande de point de cheminement personnalisé</li>
+<li>Corrigé&nbsp;: les waypoints Xaero Minimap non détectés lors de la connexion à un serveur Realms (26.1 uniquement)</li>
+<li>Corrigé&nbsp;:&nbsp;améliorations de l'importation des points de cheminement Xaeros</li>
+<li>Corrigé&nbsp;: les villageois zombies étaient masqués lors de la désactivation de l'affichage des villageois- Corrigé&nbsp;: les villageois zombies ignorant les options Afficher les villageois et Afficher les noms des villageois</li>
+<li>Corrigé&nbsp;: les villageois zombies n'apparaissent pas comme hostiles</li>
+<li>Corrigé&nbsp;: les LOD de zoom n'étaient pas générés, provoquant des trous noirs dans la carte</li>
+<li>Corrigé&nbsp;: les tuiles de carte avec zoom arrière (LOD) apparaissaient brouillées ou mélangées après un crash du jeu.</li>
+</ul>
+<h3 id="api">API</h3>
+<ul>
+<li>Ajouté&nbsp;: Option complémentaire lorsque Pixelmon ou Cobblemon sont installés pour masquer ou afficher Pokémon indépendamment de l'option Masquer les animaux.</li>
+<li>Ajouté&nbsp;: les modules complémentaires peuvent désormais ajouter des emplacements d'informations supplémentaires</li>
+<li>Ajouté&nbsp;: événement de téléportation client dans l'API (1.21.1 uniquement)</li>
+<li>Ajouté&nbsp;: données personnalisées pour les waypoints et les groupes, uniquement pour les données stockées pour les développeurs de modules complémentaires</li>
+<li>Ajouté&nbsp;: hooks d'API serveur pour les polygones sur le client</li>
+<li>Ajouté&nbsp;: Plusieurs nouveaux événements de l'API du serveur et mise à jour de certains événements</li>
+<li>Ajouté&nbsp;: position du trait dans ShapeProperties</li>
+<li>Modifié&nbsp;: API requestMapTile mise à jour pour supprimer les vérifications modId</li>
+<li>Corrigé&nbsp;:&nbsp;&gt; Corrigé&nbsp;: condition de concurrence pouvant provoquer des points de cheminement complémentaires en double</li>
+<li>Corrigé&nbsp;: les modules complémentaires créent des groupes de points de cheminement et ne sont pas enregistrés</li>
+<li>Corrigé&nbsp;: les modules complémentaires enregistrent plusieurs catégories d'options sous le même identifiant de mod et n'affichent que la première catégorie.</li>
+<li>Corrigé&nbsp;: les modules complémentaires mettent à jour les waypoints après la création, les mises à jour ne persistent pas</li>
+<li>Corrigé&nbsp;: l'API tentant d'obtenir un waypoint inexistant lance npe</li>
+<li>Corrigé&nbsp;: les titres de superposition de l'API à la position de la souris ne sont pas rendus et des problèmes macOS</li>
+<li>Corrigé&nbsp;:&nbsp;API&nbsp;: données personnalisées saisies</li>
+<li>Corrigé&nbsp;:&nbsp;changer iconLocation de String à ResourceLocation dans EntityDTO</li>
+<li>Corrigé&nbsp;: Crash lors de l'enregistrement de waypoints avec des icônes personnalisées provenant d'addons</li>
+<li>Corrigé&nbsp;: problème avec l'API incapable de supprimer les waypoints après le redémarrage du jeu</li>
+<li>Corrigé&nbsp;: la mini-carte causait des problèmes lorsque les mods utilisaient l'API de superposition d'interface graphique de Forge et Neoforge.</li>
+<li>Corrigé&nbsp;: le cache Mob ne s'efface pas complètement lors de la déconnexion et de la connexion, ce qui empêche les icônes ajoutées par l'API de s'afficher lors de la reconnexion.</li>
+<li>Corrigé&nbsp;: mise à jour pour la version fabric-api mise à jour de neoforge 21.6.16-beta (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: les groupes de waypoints ajoutés par les modules complémentaires étaient dupliqués</li>
+<li>Mise à jour&nbsp;: enregistrement InfoSlot pour prendre des composants</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "search.highlight", "search.suggest"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
